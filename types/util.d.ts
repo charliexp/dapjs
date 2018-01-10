@@ -1,0 +1,14 @@
+import { ApReg, DapVal, Reg } from "./dap/constants";
+export declare const readUInt32LE: (b: Uint8Array, idx: number) => number;
+export declare const bufferConcat: (bufs: Uint8Array[]) => Uint8Array;
+export declare const delay: (t: number) => Promise<{}>;
+export declare const addInt32: (arr: number[], val: number) => number[];
+export declare const hex: (v: number) => string;
+export declare const rid: (v: number) => string;
+export declare const bank: (addr: number) => number;
+export declare const apReg: (r: ApReg, mode: DapVal) => Reg;
+export declare const bufToUint32Array: (buf: Uint8Array) => number[];
+export declare const assert: (cond: any) => void;
+export declare const regRequest: (regId: number, isWrite?: boolean) => DapVal;
+export declare const hexBytes: (bytes: number[]) => string;
+export declare const hex2bin: (hexstr: string) => Uint8Array;
